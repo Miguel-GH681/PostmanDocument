@@ -1,0 +1,431 @@
+{
+	"info": {
+		"_postman_id": "3d6265af-17e7-43ca-85e0-20a7ec90d650",
+		"name": "Test Api KalumManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Carreras Técnicas",
+			"item": [
+				{
+					"name": "01 - Consultar todas las carreras técnicas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/CarrerasTecnicas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Busqueda de carrera",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5016/v1/KalumManagement/CarrerasTecnicas/318CFC15-9C78-4715-B718-73F734EEB412",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5016",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas",
+								"318CFC15-9C78-4715-B718-73F734EEB412"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03 - Agregar una nueva carrera técnica",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"fdgfdgfdgd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/CarrerasTecnicas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04 - Eliminar una carrera técnica",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/CarrerasTecnicas/318CFC15-9C78-4715-B718-73F734EEB412",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas",
+								"318CFC15-9C78-4715-B718-73F734EEB412"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "05 - Editar una carrera técnica",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\":\"Desarrollo de aplicaciones móbiles con React Native\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/CarrerasTecnicas/318CFC15-9C78-4715-B718-73F734EEB412",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"CarrerasTecnicas",
+								"318CFC15-9C78-4715-B718-73F734EEB412"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jornadas",
+			"item": [
+				{
+					"name": "01 - Consultar todas las jornadas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/Jornadas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Jornadas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Búsqueda de Jornada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/Jornadas/0AA84BE2-B439-43A5-B50A-14EF8E77433D",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Jornadas",
+								"0AA84BE2-B439-43A5-B50A-14EF8E77433D"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Examen Admision",
+			"item": [
+				{
+					"name": "01 - Consultar todos los examenes de admisión",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/ExamenAdmision",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"ExamenAdmision"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Búsqueda de examenes de admisión",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/ExamenAdmision/B1ED054B-4E8F-4C88-A829-E12C15CECC49",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"ExamenAdmision",
+								"B1ED054B-4E8F-4C88-A829-E12C15CECC49"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Alumnos",
+			"item": [
+				{
+					"name": "01 - Consultar todos los alumnos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/Alumnos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Alumnos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Búsqueda de alumno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/Alumnos/20220002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Alumnos",
+								"20220002"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cargo",
+			"item": [
+				{
+					"name": "01 - Consultar todos los cargos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/Cargos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Cargos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "02 - Búsqueda de cargo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/Cargos/381CB5EF-F730-4136-872C-9D2084D70031",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Cargos",
+								"381CB5EF-F730-4136-872C-9D2084D70031"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Aspirante",
+			"item": [
+				{
+					"name": "01 - Agregar Aspirante",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NoExpediente\": \"EXP-2022022\",\r\n    \"Apellidos\": \"TEST\",\r\n    \"Nombres\": \"TEST\",\r\n    \"Direccion\": \"TEST\",\r\n    \"Telefono\": \"545444\",\r\n    \"Email\": \"test@gmail.com\",\r\n    \"Estatus\": \"\",\r\n    \"CarreraId\": \"444\",\r\n    \"JornadaId\": \"444\",\r\n    \"ExamenId\": \"444\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/Aspirantes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Aspirantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Leer todos los aspirantes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/Aspirantes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Aspirantes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Enrollment",
+			"item": [
+				{
+					"name": "Inscripción",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NoExpediente\":\"EXP-2022003\",\r\n    \"Ciclo\":\"2022\",\r\n    \"MesInicioPago\":2,\r\n    \"CarreraId\":\"8D4509A3-E5B2-4F45-B9F8-137AF744CC92\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5070/v1/KalumManagement/Inscripcion/Enrollments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5070",
+							"path": [
+								"v1",
+								"KalumManagement",
+								"Inscripcion",
+								"Enrollments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
